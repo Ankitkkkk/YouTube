@@ -1,4 +1,4 @@
-<!doctype>
+<!doctype
 <html>
 <head>
 <title>My First Project</title>
@@ -7,4 +7,147 @@
 <Marquee><h1>wait it's under maintenance lol</h1></Marquee></h1>
 </body>
 
+</html>
+>
+
+<!--Created by Bhargava Ram-->
+<!--launch date 15/01/2020-->
+
+<!--hii guys it's my first game design-->
+<!--Catch a Rat. a simple game   catch it  score it-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .output
+        {
+        background-color: aquamarine;
+         height: 90vh;
+        width: 100%;
+        border: 1px solid black;
+        overflow: hidden;
+        cursor: grab;
+        }
+
+        .box{
+            position: relative;
+            left:50%;
+            top:50%; 
+            width: 100px;
+            height:100px;
+            border-radius: 15px;
+            background-image:url('https://i.pinimg.com/originals/4e/87/bb/4e87bbf52a5c5d3134865d0d87f5d09b.png');
+            background-size: 90px;
+        }
+        .s{
+            color:green;
+        }
+        .a{
+            color:red;
+            float:right;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="message">
+        X:<span class="x">0</span>
+        Y:<span class="y">0</span>
+        
+        
+         <audio controls style=" display:none;" loop   id="music"  
+     src = "https://www.bensound.com/bensound-music/bensound-jazzyfrenchy.mp3" id="music" controls="" ></audio>
+        <div class="a">Score:<span class="s">0</span></div>
+    </div>
+    <div class="output"></div>
+    
+    
+    <script> 
+    
+    alert("Catch a Rat 🐀. a simple game   catch it  score it");
+    
+    
+     var music = document.getElementById("music")
+  
+  document.addEventListener("click", function() {
+  music.play()
+  })
+    
+    
+    
+    
+        const output = document.querySelector(".output");
+        const messageOut = document.querySelectorAll(".message span");
+        
+        let score = 0;
+        output.addEventListener("mouseenter",function(){
+            output.style.backgroundColor = "cyan";
+            
+        })
+        
+        output.addEventListener("mouseleave",function(){
+            output.style.backgroundColor = 'white';
+        })
+        
+        output.addEventListener("mousemove",function(e){
+           messageOut[0].innerText = e.x;
+           messageOut[1].innerText = e.y;
+        })
+
+        document.addEventListener("DOMContentLoaded",function(){
+            let div = document.createElement("div");
+            div.classList.add("box");
+            output.appendChild(div);
+            div.x=div.offsetLeft;
+            div.y=div.offsetTop;
+            div.style.opacity = 1;
+            div.addEventListener("mouseenter",function(e){
+                div.style.opacity = .5;
+            });
+            div.addEventListener("mouseleave",function(e){
+                div.style.opacity = 1;
+                
+                score++;
+                messageOut[2].innerText = score;
+            });
+            div.steps = Math.random()*20;
+            div.direction = Math.floor(Math.random()*4);
+            window.requestAnimationFrame(move);
+
+        })
+
+        function move(){
+            let speed = Math.random()*15+ 10;
+            const box = document.querySelector(".box");
+            let bounds = output.getBoundingClientRect();
+            box.steps--;
+            if(box.steps<0){
+                box.direction = Math.floor(Math.random()*4);
+                box.steps = Math.random()*20;
+            }
+            if(box.direction == 0 && box.x < bounds.right-100){
+                box.x+= speed;
+            }
+            if(box.direction == 1 && box.x > bounds.left){
+                box.x-= speed;
+            }
+            if(box.direction == 2 && box.y < bounds.bottom-100){
+                box.y+= speed;
+            }
+            if(box.direction == 3 && box.y > bounds.top){
+                box.y-= speed;
+            }
+            
+            box.style.top = box.y+"px";
+            box.style.left =box.x + "px";
+            window.requestAnimationFrame(move);
+        }
+    </script>
+</body>
 </html>
