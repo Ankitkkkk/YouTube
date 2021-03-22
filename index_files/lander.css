@@ -1,0 +1,933 @@
+#main-header{
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top right;
+	background-attachment: fixed;
+}
+#main-header{
+background-color: #F19D3D;
+background: url('../img/fancy_bottle.png') center/auto 90% no-repeat;
+background: url('../img/fancy_bottle.png') center/auto 90% no-repeat, linear-gradient(90deg, #F19D3D 49%, #56A5A9 49%);
+}
+#main-header .mh-part-2 .mh-list li.list-icon-flame::before {
+background-image: url('../svg/icon_flame.svg');
+}
+#main-header .mh-part-2 .mh-list li.list-icon-minus::before {
+background-image: url('../svg/icon_minus.svg');
+}
+#main-header .mh-part-2 .mh-list li.list-icon-lightning::before {
+background-image: url('../svg/icon_lightning.svg');
+}
+#main-header .mh-part-2 .mh-list li.list-icon-leaf::before {
+background-image: url('../svg/icon_leaf.svg');
+}
+#main-header .mh-part-2 .mh-list li.list-icon-sun::before {
+background-image: url('../svg/icon_sun.svg');
+}
+#panel-bg-bonding{
+background-image: url('../img/panel_bg_bonding.jpeg');
+}
+#panel-bg-confident{
+background-image: url('../img/panel_bg_confident.jpeg');
+}
+#panel-bg-be-active{
+background-image: url('../img/panel_bg_be_active.jpeg');
+}
+#panel-about-us .ps-bg-image{
+background-image: url('../img/panel_bg_about_us.jpeg');
+}
+.vitangel-bg{
+background-color: black;
+background-image: url('../img/vita_angels.jpeg');
+background-position: top right;
+background-repeat: no-repeat;
+height: 600px;
+}
+@media (min-width: 992px) and (max-width: 1199px){
+#main-header{
+background-color: #F19D3D;
+background: url('../img/fancy_bottle.png') center/auto 78% no-repeat;
+background: url('../img/fancy_bottle.png') center/auto 78% no-repeat, linear-gradient(90deg, #F19D3D 49%, #56A5A9 49%);
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+#main-header{
+background-color: #F19D3D;
+background: url('../img/fancy_bottle.png') center/auto 70% no-repeat;
+background: url('../img/fancy_bottle.png') center/auto 70% no-repeat, linear-gradient(90deg, #F19D3D 49%, #56A5A9 49%);
+}
+}
+@media (min-width: 576px) and (max-width: 767px){
+#main-header .mh-part-1:before {
+background-image: url('../img/fancy_bottle.png');
+}
+}
+@media (max-width: 575px) {
+#main-header{
+background-color: #56A5A9;
+background: url('../img/fancy_bottle_mobile.png') -30px 60px/auto 33% no-repeat;
+background: url('../img/fancy_bottle_mobile.png') -30px 60px/auto 33% no-repeat, linear-gradient(172deg, #56A5A9 44.5%, #F19D3D 44.5%);
+}
+}
+@media (max-width: 444px) {
+#main-header{
+background-color: #56A5A9;
+background: url('../img/fancy_bottle_mobile.png') -34px 60px/auto 30% no-repeat;
+background: url('../img/fancy_bottle_mobile.png') -34px 60px/auto 30% no-repeat, linear-gradient(172deg, #56A5A9 43%, #F19D3D 43%);
+}
+}
+@media (max-width: 413px) {
+#main-header{
+background-color: #56A5A9;
+background: url('../img/fancy_bottle_mobile.png') -15px 48px/auto 30% no-repeat;
+background: url('../img/fancy_bottle_mobile.png') -15px 48px/auto 30% no-repeat, linear-gradient(172deg, #56A5A9 40%, #F19D3D 40%);
+}
+}
+@media (max-width: 374px) {
+#main-header{
+background-color: #56A5A9;
+background: url('../img/fancy_bottle_mobile.png') -25px 51px/auto 29% no-repeat;
+background: url('../img/fancy_bottle_mobile.png') -25px 51px/auto 29% no-repeat, linear-gradient(172deg, #56A5A9 41.5%, #F19D3D 41.5%);
+}
+}
+/*************/
+#page-nav,
+body{
+	min-width: 320px;
+	overflow-x: auto;
+}
+
+#page-nav{
+	background-color: rgba(255, 255, 255, 0.94);
+	border-bottom: 1px solid rgb(227, 235, 246, 0.94);
+}
+
+/*#page-nav .navbar-toggler:focus,
+#page-nav .navbar-toggler:hover{
+	text-decoration: none;
+}*/
+
+#page-nav .navbar-brand{
+	font-family: 'Gilroy-Black';
+	font-size: 3.4rem;
+	line-height: 1;
+}
+
+#page-nav .nav-link{
+	font-family: 'Gilroy-Bold';
+	color: #000000;
+	font-size: 13.9px;
+	display: inline-block;
+}
+
+#page-nav .nav-link.active{
+	border-bottom: 4px solid #F19D3D;
+	padding-bottom: 4px;
+}
+
+#page-nav + *{
+	margin-top: 81px; /* height of the navbar */
+}
+
+.panel-section{
+
+}
+
+
+
+.ps-image,
+.ps-header{
+	display: inline-block;
+}
+
+.ps-header{
+	font-family: 'Gilroy-Black';
+}
+
+.ps-image{
+
+}
+
+.ps-header-title{
+	line-height: 0.9;
+}
+
+h1.ps-header-title{
+	font-size: 2.5rem;
+}
+
+h2.ps-header-title{
+	font-size: 1.8rem;
+}
+
+.ps-header-title-line{
+	border-top-width: 12px;
+	width: 120px;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.ps-body{
+	font-family: 'Gilroy-Bold';
+	font-size: 1.1rem;
+	line-height: 1.28;
+}
+
+.ps-body ul{
+	-webkit-padding-start: 20px;
+	   -moz-padding-start: 20px;
+	        padding-inline-start: 20px;
+}
+
+.ps-info-text{
+	font-family: 'Gilroy-Bold';
+	font-size: 1.45rem;
+	line-height: 1.3;
+	margin-top: 1.4rem;
+}
+
+.ps-list{
+	list-style: none;
+	font-family: 'Gilroy-SemiBold';
+	font-size: 1.4rem;
+	line-height: 1.15;
+}
+
+.ps-list li::before {
+	content: '\2022';
+	font-weight: bold;
+	font-size: 132%;
+	vertical-align: middle;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+.ps-bg-image{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.ps-review{
+	font-family: 'Gilroy-Medium';
+	font-size: 1rem;
+}
+
+.ps-review p{
+	line-height: 1.2;
+	color: #343A40;
+}
+
+.ps-review .blockquote-footer{
+	font-size: 90%;
+}
+
+.ps-review .fa-star{
+	color: #F8DA46;
+	letter-spacing: -4px;
+}
+
+.panel-section-bg-image{
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.btn-shop-now{
+	padding: 0.6rem 4rem;
+	margin: 1rem 0px;
+	border-radius: 0;
+	font-family: 'Gilroy-Bold';
+	font-size: 1.4rem;
+	color: #FFFFFF;
+	background-color: #000000;
+	border-color: #000000;
+	box-shadow: -3px 3px 18px 0px rgba(0,0,0,0.42);
+}
+
+.btn-shop-now:hover{
+	background-color: #23272B;
+	border-color: #1D2124;
+}
+
+.btn-shop-now:not(:disabled):not(.disabled).active,
+.btn-shop-now:not(:disabled):not(.disabled):active,
+.show > .btn-shop-now.dropdown-toggle{
+	background-color: #1D2124;
+	border-color: #171A1D;
+}
+
+#main-header .mh-part-1 .mh-title-1{
+	font-family: 'Gilroy-ExtraBold';
+	font-size: 2.4rem;
+	line-height: 1.1;
+}
+
+#main-header .mh-part-1 .btn-shop-now{
+	padding: 0.6rem 2.4rem;
+	margin-bottom: 0.75rem;
+	font-size: 1.5rem;
+}
+
+#main-header .mh-part-1 .mh-money-back-guarantee-label{
+	font-family: 'Gilroy-SemiBoldItalic';
+	font-size: 1rem;
+}
+
+#main-header .mh-title-2{
+	font-family: 'Raleway-BlackItalic';
+	font-size: 2.6rem;
+	line-height: 1.32;
+	-webkit-transform: rotate(-8deg);
+	transform: rotate(-8deg);
+}
+
+#main-header .mh-part-2 .mh-list{
+	list-style: none;
+	font-family: 'Gilroy-Bold';
+	font-size: 1.4rem;
+	line-height: 2;
+}
+
+#main-header .mh-part-2 .mh-list li{
+
+}
+
+#main-header .mh-part-2 .mh-list li::before {
+	content: '';
+	color: #FFFFFF;
+	display: inline-block;
+	height: 1.4rem;
+	width: 1.4rem;
+	margin-right: 1rem;
+	vertical-align: middle;
+	margin-top: auto;
+	margin-bottom: auto;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#main-header .mh-icons .mh-i-icons{
+	max-width: 100%;
+}
+
+#main-header .mh-icons .mh-i-icons img{
+	width: 90%;
+	height: auto;
+}
+
+#main-header .mh-icons .mh-i-nutritional img{
+	fill: #46587A;
+}
+
+
+#panel-bhb-diagram{
+	background-color: #FFFFFF;
+}
+
+#panel-customer-reviews{
+	background-color: #FFFFFF;
+}
+
+#panel-why-keto{
+	background-color: #46587A;
+}
+
+#panel-proven-results{
+	background-color: #F8DA46;
+}
+
+#panel-no-strict-dieting{
+	background-color: #C0472C;
+}
+
+#panel-easy-to-use{
+	background-color: #46587A;
+}
+
+#panel-keto-for-you{
+	background-color: #56A5A9;
+}
+
+#panel-why-keto-works{
+	background-color: #FFFFFF;
+}
+
+#panel-how-it-works{
+	background-color: #FFFFFF;
+}
+
+#panel-how-it-works .ps-info-text{
+	color: #56A5A9;
+}
+
+#panel-what-is-bhb{
+	background-color: #F8DA46;
+}
+
+#panel-ingredient-green-tea{
+	background-color: #F19D3D;
+}
+
+#panel-ingredient-garcinia-combogia{
+	background-color: #C0472C;
+}
+
+#panel-ingredient-green-coffee-extract{
+	background-color: #56A5A9;
+}
+
+#panel-where-to-start{
+	background-color: #FFFFFF;
+}
+
+#panel-quality-guarantee{
+	background-color: #F8DA46;
+}
+
+#panel-money-back-guarantee{
+	background-color: #FFFFFF;
+}
+
+#panel-about-us{
+	background-color: #F19D3D;
+}
+
+#panel-about-us .ps-body .h3{
+	font-size: 1.5rem;
+}
+
+#main-footer{
+	background-color: #000000;
+	font-family: 'Gilroy-Bold';
+	font-size: 12px;
+	line-height: 1.3;
+}
+
+/* //vitamina angels */
+.vitangel-bg{
+	background-color: black;
+		background-position: top right;
+		background-repeat: no-repeat;
+		height: 600px;
+}
+
+.vitangel{
+	padding-top: 121px;
+	color: white;
+	font-size: 1em;
+}
+
+.vitangel h2{
+	font-size: 3em;
+}
+
+.vitangel p {
+	font-size: 1.3em;
+}
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+	#page-nav .navbar-brand{
+		font-size: 4.2rem;
+	}
+
+	#page-nav + *{
+		margin-top: 94px; /* height of the navbar */
+	}
+
+	.ps-header-title{
+		line-height: 1;
+	}
+
+	h1.ps-header-title{
+		font-size: 3rem;
+	}
+
+	h2.ps-header-title{
+		font-size: 2.2rem;
+	}
+
+	.ps-header-title-line{
+		border-top-width: 13px;
+		width: 133px;
+		margin-top: 2.2rem;
+		margin-bottom: 2.2rem;
+	}
+
+	.ps-body{
+		font-size: 1.3rem;
+		line-height: 1.35;
+	}
+
+	.ps-info-text{
+		font-size: 1.8rem;
+		line-height: 1.4;
+		margin-top: 2rem;
+	}
+
+	.ps-list{
+		font-size: 1.7rem;
+	}
+}
+
+
+@media (min-width: 768px) {
+	.two-by-two-panel-section-holder .panel-section .container{
+		max-width: 360px;
+	}
+
+	.two-by-two-panel-section-holder > .row > .panel-section:nth-child(odd) .container{
+		padding-right: 50px;
+	}
+
+	.two-by-two-panel-section-holder > .row > .panel-section:nth-child(even) .container{
+		padding-left: 50px;
+	}
+
+	.two-by-two-panel-section-holder > .row > .panel-section:nth-child(odd) .container{
+		margin-right: 0;
+	}
+
+	.two-by-two-panel-section-holder > .row > .panel-section:nth-child(even) .container{
+		margin-left: 0;
+	}
+
+	.panel-section-bg-image{
+		height: 400px;
+	}
+
+	.ps-body p{
+		margin-bottom: 2rem;
+	}
+
+	.ps-list{
+		line-height: 1.5;
+	}
+}
+
+
+@media (min-width: 992px) {
+	.two-by-two-panel-section-holder .panel-section .container{
+		max-width: 470px;
+	}
+
+	.panel-section-bg-image{
+		height: 600px;
+	}
+
+	#page-nav > .container,
+	#page-nav > .container-fluid {
+		align-items: baseline;
+	}
+
+	#page-nav.navbar-expand-lg .navbar-nav .nav-link{
+		padding-left: 0;
+		padding-right: 0;
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+	}
+
+	.ps-image{
+		max-height: 360px;
+	}
+
+	#panel-where-to-start .ps-image{
+		max-height: 490px;
+	}
+
+	#panel-money-back-guarantee .ps-image{
+		max-height: 300px;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.two-by-two-panel-section-holder .panel-section .container{
+		max-width: 570px;
+	}
+
+	.panel-section-bg-image{
+		height: 780px;
+	}
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px){
+	#main-header > .container{
+		max-width: 100%;
+	}
+
+	#main-header .mh-part-1 .mh-title-1,
+	#main-header .mh-part-2 .mh-title-2{
+		font-size: 2.4rem;
+		line-height: 1.1;
+	}
+
+	#main-header .mh-part-2 .mh-list{
+		font-size: 1.3rem;
+		line-height: 2;
+		-webkit-padding-start: 20px;
+		   -moz-padding-start: 20px;
+		        padding-inline-start: 20px;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+	#main-header > .container{
+		max-width: 100%;
+	}
+
+	#main-header .mh-part-1 .mh-title-1{
+		font-size: 2rem;
+		line-height: 1;
+	}
+
+	#main-header .mh-part-2 .mh-title-2{
+		font-size: 2rem;
+		line-height: 1.1;
+	}
+
+	#main-header .mh-part-2 .mh-list{
+		font-size: 1.26rem;
+		line-height: 1.4;
+		-webkit-padding-start: 10px;
+		   -moz-padding-start: 10px;
+		        padding-inline-start: 10px;
+	}
+
+	#main-header .mh-part-1 .mh-money-back-guarantee-label{
+		font-size: 0.96rem;
+	}
+
+	#main-header .mh-part-2 .mh-list li::before {
+		height: 1.26rem;
+		width: 1.26rem;
+		margin-right: 0.6rem;
+	}
+
+	#main-header .mh-icons .mh-i-icons{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+
+@media (min-width: 576px) and (max-width: 767px){
+	#main-header{
+		background-color: #56A5A9;
+		background: -64px 20px/auto 45% no-repeat;
+		background: -64px 20px/auto 45% no-repeat, linear-gradient(172deg, #56A5A9 48%, #F19D3D 48%);
+	}
+
+	#main-header .mh-part-1:before {
+		content: '';
+		vertical-align: middle;
+		display: inline-block;
+		width: 308px;
+		height: 292px;
+		left: -80px;
+		position: absolute;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+
+
+
+
+@media (max-width: 991px) {
+	.ps-image{
+		max-height: 170px;
+		padding-bottom: 10px;
+	}
+		.vitangel-bg {
+		background-color: black;
+		background-position: top right;
+		background-size: 101%;
+		height: 500px;
+	}
+
+	.vitangel {
+		height: 320px;
+		padding-top: 0px;
+
+	}
+
+	.vitangel h2 {
+		font-size: 2.1em;
+	}
+}
+
+
+@media (max-width: 767px) {
+	#panel-about-us .ps-bg-image{
+		min-height: 300px;
+	}
+
+	#main-header .mh-part-2 .mh-list{
+		font-size: 1.3rem;
+		line-height: 1.5;
+		display: inline-block;
+		-webkit-padding-start: 5px;
+		   -moz-padding-start: 5px;
+		        padding-inline-start: 5px;
+	}
+
+	#main-header .mh-part-2 .mh-list li::before {
+		height: 1.3rem;
+		width: 1.3rem;
+		margin-right: 0.7rem;
+	}
+			.vitangel-bg {
+			background-color:black;
+			background-position: top right;
+			background-size: 101%;
+			height: auto;
+		}
+		.vitangel {
+			height: 320px;
+			padding-right: 25%;
+			padding-top: 0px;
+
+		}
+
+		.vitangel h2 {
+			font-size: 2em;
+		}
+
+		.vitangel p {
+			font-size: 1em;
+		}
+}
+
+
+@media (max-width: 575px) {
+	#main-header .mh-part-1{
+		margin-bottom: 0!important;
+	}
+
+	#main-header .mh-part-2{
+		padding-top: 15px !important;
+	}
+
+	#main-header .mh-part-1:before {
+		width: 308px;
+		height: 292px;
+		left: -80px;
+	}
+
+	#main-header .mh-part-1 .mh-title-1{
+		font-size: 2rem;
+		line-height: 1.1;
+	}
+
+	#main-header .mh-part-1 .btn-shop-now{
+		margin-bottom: 0.36rem;
+		font-size: 1.3rem;
+	}
+
+	#main-header .mh-part-1 .mh-money-back-guarantee-label{
+		font-size: 0.9rem;
+	}
+
+	#main-header .mh-title-2{
+		font-size: 2rem;
+		line-height: 1.2;
+	}
+
+	#main-header .mh-part-2 .mh-list{
+		font-size: 1.2rem;
+		line-height: 1.4;
+		display: inline-block;
+		-webkit-padding-start: 0px;
+		   -moz-padding-start: 0px;
+		        padding-inline-start: 0px;
+	}
+
+	#main-header .mh-part-2 .mh-list li::before {
+		height: 1.2rem;
+		width: 1.2rem;
+		margin-right: 0.5rem;
+	}
+
+	/*.mh-icons-smallest .mh-i-certifications{
+		padding-left: 0;
+	}*/
+
+	#main-header .mh-icons-smallest{
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	#main-header .mh-icons-smallest .mh-i-certifications img{
+		max-width: 52px;
+	}
+			.vitangel {
+			height: 330px;
+			padding-top: 0px;
+			padding-right: 0%;
+
+		}
+
+		.vitangel-bg {
+			background: black;
+			height: auto;
+		}
+
+		.vitangel h2 {
+			font-size: 2em;
+		}
+
+		.vitangel p {
+			font-size: 1em;
+		}
+}
+
+
+@media (max-width: 413px) {
+	#main-header .mh-part-1{
+		margin-bottom: 10px !important;
+		padding-right: 10px;
+	}
+
+	#main-header .mh-part-2{
+		padding-top: 0 !important;
+	}
+
+	#main-header .mh-part-1 .mh-title-1{
+		font-size: 1.54rem;
+		line-height: 1;
+		margin-bottom: 4px;
+	}
+
+	#main-header .mh-part-1 .btn-shop-now{
+		padding: 0.6rem 1.3rem;
+		font-size: 1.08rem;
+	}
+
+	#main-header .mh-part-1 .mh-money-back-guarantee-label{
+		font-size: 0.75rem;
+		line-height: 1.3;
+	}
+
+	#main-header .mh-title-2{
+		font-size: 1.5rem;
+		line-height: 1.2;
+	}
+
+	.mh-list-holder{
+		padding-right: 0;
+		padding-left: 12px;
+	}
+
+	#main-header .mh-part-2 .mh-list{
+		margin-top: 3.5rem !important;
+		font-size: 1.1rem;
+		line-height: 1.4;
+	}
+
+	#main-header .mh-part-2 .mh-list li::before {
+		height: 1rem;
+		width: 1rem;
+		margin-right: 0.4rem;
+	}
+
+		.vitangel {
+			height: 330px;
+			padding-top: 0px;
+
+		}
+
+		.vitangel-bg {
+			background: black;
+			height: auto;
+		}
+
+		.vitangel h2 {
+			font-size: 2em;
+		}
+
+		.vitangel p {
+			font-size: 1em;
+		}
+}
+
+
+@media (max-width: 374px) {
+	#main-header .mh-part-1{
+		margin-bottom: 0 !important;
+		padding-right: 8px;
+	}
+
+	#main-header .mh-part-1 .mh-title-1{
+		font-size: 1.6rem;
+		line-height: 1;
+		margin-bottom: 0;
+	}
+
+	#main-header .mh-part-1 .btn-shop-now{
+		padding: 0.56rem 1.2rem;
+		font-size: 1.1rem;
+	}
+
+	#main-header .mh-part-1 .mh-money-back-guarantee-label{
+		font-size: 0.73rem;
+		line-height: 1.3;
+	}
+
+	#main-header .mh-title-2{
+		font-size: 1.5rem;
+		line-height: 1.2;
+	}
+
+	.mh-list-holder{
+		padding-right: 0;
+		padding-left: 12px;
+	}
+
+	#main-header .mh-part-2 .mh-list{
+		margin-top: 2.4rem !important;
+		font-size: 1.1rem;
+		line-height: 1.4;
+	}
+
+	#main-header .mh-part-2 .mh-list li::before {
+		height: 1rem;
+		width: 1rem;
+		margin-right: 0.4rem;
+	}
+
+	.vitangel {
+		height: 330px;
+		padding-top:0px;
+
+	}
+	.vitangel-bg{
+		background:black;
+		height: auto;
+	}
+	.vitangel h2{
+		font-size: 2em;
+	}
+	.vitangel p {
+		font-size: 1em;
+	}
+}

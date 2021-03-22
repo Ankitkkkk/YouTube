@@ -1,0 +1,32 @@
+/*!
+ * Global CSS include.
+ */
+.text-bright-green{
+	color: #4CD964;
+}
+
+.inner-addon {
+	position: relative;
+}
+
+.inner-addon .fa {
+	position: absolute;
+	padding: 10px;
+	pointer-events: none;
+}
+
+.left-addon .fa {
+	left:  0px;
+}
+
+.right-addon .fa {
+	right: 0px;
+}
+
+.left-addon input {
+	padding-left: 30px;
+}
+
+.right-addon input {
+	padding-right: 30px;
+}
